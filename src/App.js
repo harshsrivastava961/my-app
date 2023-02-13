@@ -7,13 +7,6 @@ function App() {
 const [threeD, setTHreeD] = useState(true);
 const [webAR, setWebAR] = useState(false);
 
-// const ThreeDHandler =() => {
-// setTHreeD(<ThreeD />)
-// };
-// const WebArHandler = () =>{
-//   setWebAR(<WebAr />)
-// };
-
   return (
     <>
     <div  className="Container">
@@ -22,8 +15,6 @@ const [webAR, setWebAR] = useState(false);
         alt="icon"
       /></button>
       { threeD ? <ThreeD />: <WebAr /> }
-      {/* <button onClick={()=> {setWebAR (!webAR)}}>Web-AR</button>
-      {webAR ? <WebAr />: null} */}
     </div>
     </>
   );
