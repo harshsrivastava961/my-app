@@ -1,6 +1,6 @@
 Project Discription.
 
-For the Web-VR Rendering of 3D object i have used https://glitch.com/,  which takes input as glb and usdz file format and provide htttp link which is converted into bar code.
+For the Web-AR Rendering of 3D object i have used https://glitch.com/,  which takes input as glb and usdz file format and provide htttp link which is converted into bar code.
 Bar code is then scaned with smart phone, which provide a link that can be opened in browser of smart phone. which leads to vr effect.
 3D model is renderd with the react-three, react-three/drei, react-three/fiber pacakges.
 gltf file format is taken as input which is converted to jsx file format. it's converted with npx gltfjsx file name command. through which default 3D object is shown on the screen.
