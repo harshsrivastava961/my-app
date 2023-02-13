@@ -5,7 +5,6 @@ import './App.css';
 
 function App() {
 const [threeD, setTHreeD] = useState(true);
-const [webAR, setWebAR] = useState(false);
 
   return (
     <>
