@@ -1,7 +1,7 @@
 import { useCustomization } from "./context/Customization";
 
 function Configurator() {
-  const { material, setMaterial,  chairColor, setChairColor, chairColors } = useCustomization();
+  const { material, setMaterial, setChairColor, chairColors } = useCustomization();
   console.log("material", material);
   return (
     <>

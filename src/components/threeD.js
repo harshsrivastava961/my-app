@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
-import {FabricModel} from "../asset/gltfChair/Fabric";
-import {LeatherModel} from "../asset/gltfChair/Leather";
+// import {FabricModel} from "../asset/gltfChair/Fabric";
+// import {LeatherModel} from "../asset/gltfChair/Leather";
 import { useCustomization } from "./context/Customization";
 // import { SofaLeather } from "../asset/gltfSofa/SofaLeather";
 // import {SofaFabric} from "../asset/gltfSofa/SofaFabric";
