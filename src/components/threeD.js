@@ -1,5 +1,12 @@
 import { Canvas } from "@react-three/fiber";
-import { Model } from "../asset/gltfChair/Scene";
+import {FabricModel} from "../asset/gltfChair/Fabric";
+import {LeatherModel} from "../asset/gltfChair/Leather";
+import { useCustomization } from "./context/Customization";
+// import { SofaLeather } from "../asset/gltfSofa/SofaLeather";
+// import {SofaFabric} from "../asset/gltfSofa/SofaFabric";
+import ShoesFabric from "../asset/gltfShoe/ShoesFabric";
+import ShoesLeather from "../asset/gltfShoe/ShoesLeather"
+
 // import Model  from "../asset/gltfShoe/Shoe";
 
 import styled from "styled-components";
@@ -8,6 +15,8 @@ import Configurator from "./Configurator";
 import "./Configurator.css";
 
 function ThreeD() {
+  const { material } = useCustomization();
+
   const Container = styled.div`
     width: 50vw;
     height: 90vh;
@@ -18,7 +27,10 @@ function ThreeD() {
         <Canvas camera={{ fov: 20 }}>
           <ambientLight intensity={3.25} />
           <directionalLight intensity={0.4} />
-          <Model />
+       {/* {material === "Leather" ? <LeatherModel/> : <FabricModel/>} */}
+       {material === "Leather" ? <ShoesLeather/> : <ShoesFabric/>}
+
+       {/* {material === "Leather" ? <SofaLeather/> : <SofaFabric/>} */}
           <OrbitControls />
         </Canvas>
       </Container>
