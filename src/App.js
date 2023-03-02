@@ -42,6 +42,19 @@ function App({url}) {
         camera-controls
         style={{ width: "100%", height: "500px" }} 
          >
+          <button
+              slot="ar-button"
+              style={{
+                backgroundColor: "white",
+                borderRadius: "4px",
+                border: "none",
+                position: "absolute",
+                top: "16px",
+                right: "16px",
+              }}
+            >
+              👋 Activate AR
+            </button>
       </model-viewer>
       <div  ><img style={{ width: "200px", height: "200px" }} src={src} alt = "hello"/></div>
       
