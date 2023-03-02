@@ -9,7 +9,7 @@ import { useCustomization } from '../../components/context/Customization';
 import * as THREE from "three"; 
 
 export default function ShoesFabric({ ...props }) {
-  const {material, chairColor} =useCustomization();
+  const { chairColor} =useCustomization();
 
   const fabricTextureProps = useTexture({
     // map: './fabric/Substance_Graph_BaseColor.jpg',
@@ -28,12 +28,12 @@ export default function ShoesFabric({ ...props }) {
     roughnessMap: './leather/Leather_Padded_001_roughness.jpg',
     aoMap: './leather/Leather_Padded_001_ambientOcclusion.jpg',
   })
-  const PlasticTextureProps = useTexture({
-    map: './plastic/Plastic_Tubes_001_basecolor.jpg',
-    normalMap: './plastic/Plastic_Tubes_001_normal.jpg',
-    roughnessMap: './plastic/Plastic_Tubes_001_roughness.jpg',
-    aoMap: './plastic/Plastic_Tubes_001_ambientOcclusion.jpg',
-  })
+  // const PlasticTextureProps = useTexture({
+  //   map: './plastic/Plastic_Tubes_001_basecolor.jpg',
+  //   normalMap: './plastic/Plastic_Tubes_001_normal.jpg',
+  //   roughnessMap: './plastic/Plastic_Tubes_001_roughness.jpg',
+  //   aoMap: './plastic/Plastic_Tubes_001_ambientOcclusion.jpg',
+  // })
   const AbstractTextureProps = useTexture({
     map: './abstract/Abstract_Organic_003_basecolor.jpg',
     normalMap: './abstract/Abstract_Organic_003_normal.jpg',
@@ -46,12 +46,12 @@ export default function ShoesFabric({ ...props }) {
     roughnessMap: './stone/Substance_Graph_roughness.jpg',
     aoMap: './stone/Substance_Graph_ambientOcclusion.jpg',
   })
-  const LeatherTextureProps = useTexture({
-    map: "./leatherPatch/Leather_008_BaseColor.jpg",
-    normalMap: "./leatherPatch/Leather_008_Normal.jpg",
-   roughnessMap: "./leatherPatch/Leather_008_Roughness.jpg",
-   aoMap: "./leatherPatch/Leather_008_AmbientOcclusion.jpg",
-  })
+  // const LeatherTextureProps = useTexture({
+  //   map: "./leatherPatch/Leather_008_BaseColor.jpg",
+  //   normalMap: "./leatherPatch/Leather_008_Normal.jpg",
+  //  roughnessMap: "./leatherPatch/Leather_008_Roughness.jpg",
+  //  aoMap: "./leatherPatch/Leather_008_AmbientOcclusion.jpg",
+  // })
 
 
   fabricTextureProps.map.repeat.set(2,2);

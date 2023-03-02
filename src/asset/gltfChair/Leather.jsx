@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useGLTF } from "@react-three/drei";
 import { useTexture } from "@react-three/drei";
 import { useCustomization } from "../../components/context/Customization";
@@ -7,7 +7,7 @@ import * as THREE from "three";
 export function LeatherModel(props) {
   const { chairColor } = useCustomization();
 
-  const { nodes, materials } = useGLTF('/scene.gltf');
+  const { nodes } = useGLTF('/scene.gltf');
 
   const LeatherTextureProps = useTexture({
     // map: "./leatherWeave/Leather_Weave_005_basecolor.jpg",

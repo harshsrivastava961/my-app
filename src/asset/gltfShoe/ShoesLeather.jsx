@@ -9,7 +9,7 @@ import { useCustomization } from '../../components/context/Customization';
 import * as THREE from "three"; 
 
 export default function ShoesLeather({ ...props }) {
-  const {material, chairColor} =useCustomization();
+  const { chairColor} =useCustomization();
 
   const LeatherTextureProps = useTexture({
     map: "./leatherPatch/Leather_008_BaseColor.jpg",

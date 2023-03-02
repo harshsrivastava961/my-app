@@ -7,16 +7,16 @@ Source: https://sketchfab.com/3d-models/arm-chair-furniture-ec62634ebb5a41f491bb
 Title: Arm chair / Furniture
 */
 
-import React, { useRef } from 'react'
+import React from 'react'
 import { useGLTF } from '@react-three/drei';
 import { useTexture } from '@react-three/drei';
 import { useCustomization } from '../../components/context/Customization';
 import * as THREE from "three"; 
 
 export function Model(props) {
-  const {material, chairColor} =useCustomization();
+  const {material} =useCustomization();
 
-  const { nodes, materials } = useGLTF('/scene.gltf')
+  const { nodes } = useGLTF('/scene.gltf')
 
   const LeatherTextureProps = useTexture({
     map: './leather/Leather_Padded_001_basecolor.jpg',

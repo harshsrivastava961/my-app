@@ -11,7 +11,7 @@ function App({url}) {
   
   useEffect(()=> {
     QRCode.toDataURL(url).then(setSrc);
-  },[]);
+  },[url]);
   
 
   return (
