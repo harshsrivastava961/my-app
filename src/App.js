@@ -38,8 +38,9 @@ function App({url}) {
         ios-src="https://cdn.glitch.global/612f90f6-8704-4969-8e31-17d3069b0154/Arm_chair__Furniture.usdz?v=1676215324669"
         shadow-intensity="1"
         camera-controls
-        style={{ width: "100%", height: "500px" }}
-      ></model-viewer>
+        style={{ width: "100%", height: "500px" }} 
+        auto-rotate ar>
+      </model-viewer>
       <div  ><img style={{ width: "200px", height: "200px" }} src={src} alt = "hello"/></div>
       
     </>
