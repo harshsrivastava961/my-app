@@ -1,11 +1,11 @@
 import { Canvas } from "@react-three/fiber";
-// import {FabricModel} from "../asset/gltfChair/Fabric";
-// import {LeatherModel} from "../asset/gltfChair/Leather";
+import {FabricModel} from "../asset/gltfChair/Fabric";
+import {LeatherModel} from "../asset/gltfChair/Leather";
 import { useCustomization } from "./context/Customization";
 // import { SofaLeather } from "../asset/gltfSofa/SofaLeather";
 // import {SofaFabric} from "../asset/gltfSofa/SofaFabric";
-import ShoesFabric from "../asset/gltfShoe/ShoesFabric";
-import ShoesLeather from "../asset/gltfShoe/ShoesLeather"
+// import ShoesFabric from "../asset/gltfShoe/ShoesFabric";
+// import ShoesLeather from "../asset/gltfShoe/ShoesLeather"
 
 // import Model  from "../asset/gltfShoe/Shoe";
 
@@ -27,8 +27,8 @@ function ThreeD() {
         <Canvas camera={{ fov: 20 }}>
           <ambientLight intensity={3.25} />
           <directionalLight intensity={0.4} />
-       {/* {material === "Leather" ? <LeatherModel/> : <FabricModel/>} */}
-       {material === "Leather" ? <ShoesLeather/> : <ShoesFabric/>}
+       {material === "Leather" ? <LeatherModel/> : <FabricModel/>}
+       {/* {material === "Leather" ? <ShoesLeather/> : <ShoesFabric/>} */}
 
        {/* {material === "Leather" ? <SofaLeather/> : <SofaFabric/>} */}
           <OrbitControls />
