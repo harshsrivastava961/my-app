@@ -3,6 +3,7 @@ import WebAr from "./components/webAr";
 import { useEffect, useState } from "react";
 import "./App.css";
 import QRCode from "qrcode";
+// import Cloudinary from "./components/cloudinary";
 import { CustomizationProvider } from "./components/context/Customization";
 
 function App({url}) {
@@ -17,6 +18,7 @@ function App({url}) {
   return (
     <>
       <CustomizationProvider>
+        {/* <Cloudinary/> */}
       <div className="Containers">
         <button
           className="ArButton"
