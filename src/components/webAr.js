@@ -1,6 +1,3 @@
-import frame from "../asset/barcode/frame.png"
-import './WebAr.css';
-
 function WebAr({src}) {
 
   return (
